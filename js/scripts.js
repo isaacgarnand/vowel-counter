@@ -2,7 +2,7 @@ $(document).ready(function () {
 	$("form#input").submit(function (event) {
 		event.preventDefault();
 
-		var string = $("#input1").val();
+		var string = $("#input1").val().toLowerCase();
 		var vowelCount = 0;
 
 		for(i = 0; i < string.length; i++) {
